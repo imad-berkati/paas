@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "I.B"
+      changes:
+        - sqlFile:
+            dbms: "postgresql"
+            encoding: "UTF-8"
+            path: "scripts/init_tables.sql"
+            relativeToChangelogFile: true
